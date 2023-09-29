@@ -5,9 +5,9 @@ namespace IntroSample
 {
     internal class Program
     {
-        private const string deploy_model = "gpt4demo";
-        private const string aoai_Endpoint = "https://demo0222.openai.azure.com";
-        private const string api_Key = "aa1c63644a6f4caa805e2086a6b350cf";
+        private const string deploy_model = "xxxx";
+        private const string aoai_Endpoint = "https://xxxx.openai.azure.com";
+        private const string api_Key = "xxxxx";
 
         static async Task Main(string[] args)
         {
