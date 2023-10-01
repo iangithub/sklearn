@@ -1,0 +1,9 @@
+{
+  "schema": 1,
+  "type": "completion",
+  "description": "Answer any question based on text source",
+  "completion": {
+    "max_tokens": 2000,
+    "temperature": 0.2
+  }
+}
