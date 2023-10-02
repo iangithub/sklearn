@@ -10,10 +10,10 @@ namespace WebSearch
 {
     internal class Program
     {
-        private const string deploy_model = "gpt4demo";
-        private const string aoai_Endpoint = "https://demo0222.openai.azure.com";
-        private const string api_Key = "b13848c58d164024813abe2429467233";
-        private const string bingSerach_Key = "160e2d29fadc4feeb0dd35c01faec289";
+        private const string deploy_model = "xxx";
+        private const string aoai_Endpoint = "https://xxx.openai.azure.com";
+        private const string api_Key = "xxxx";
+        private const string bingSerach_Key = "xxxx";
 
         static async Task Main(string[] args)
         {

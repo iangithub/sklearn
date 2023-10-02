@@ -7,10 +7,10 @@ namespace KmSearch
 {
     internal class Program
     {
-        private const string deploy_Model = "gpt4demo";
-        private const string embedding_Model = "text-embedding-ada-demo";
-        private const string aoai_Endpoint = "https://demo0222.openai.azure.com";
-        private const string api_Key = "b13848c58d164024813abe2429467233";
+        private const string deploy_Model = "xxxx";
+        private const string embedding_Model = "xxxx";
+        private const string aoai_Endpoint = "https://xxxx.openai.azure.com";
+        private const string api_Key = "xxxx";
         private const string embedding_CollectionName = "Law";
 
         static async Task Main(string[] args)
