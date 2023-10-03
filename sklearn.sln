@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebSearch", "WebSearch\WebS
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WithoutSkSample", "WithoutSkSample\WithoutSkSample\WithoutSkSample.csproj", "{90341A53-5DB2-4DAA-B25E-BA6705E88AAC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InlineSemanticFunction", "InlineSemanticFunction\InlineSemanticFunction.csproj", "{24205929-D7D9-425D-A07E-40C8DB4778A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InlineSemanticFunction", "InlineSemanticFunction\InlineSemanticFunction.csproj", "{24205929-D7D9-425D-A07E-40C8DB4778A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerializingSemanticFunction", "SerializingSemanticFunction\SerializingSemanticFunction.csproj", "{88A97B30-5898-42BE-BF00-D14DF63A5BA8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{24205929-D7D9-425D-A07E-40C8DB4778A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{24205929-D7D9-425D-A07E-40C8DB4778A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{24205929-D7D9-425D-A07E-40C8DB4778A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88A97B30-5898-42BE-BF00-D14DF63A5BA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88A97B30-5898-42BE-BF00-D14DF63A5BA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88A97B30-5898-42BE-BF00-D14DF63A5BA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88A97B30-5898-42BE-BF00-D14DF63A5BA8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
