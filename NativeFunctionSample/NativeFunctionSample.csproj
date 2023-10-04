@@ -12,10 +12,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Plugins\WriterPlugin\FacebookPoster\config.json">
+    <None Update="Plugins\WriterPlugin\Email\config.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Plugins\WriterPlugin\FacebookPoster\skprompt.txt">
+    <None Update="Plugins\WriterPlugin\Email\skprompt.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
