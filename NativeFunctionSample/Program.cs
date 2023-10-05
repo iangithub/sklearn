@@ -19,7 +19,9 @@ namespace NativeFunctionSample
                   api_Key  // Azure OpenAI Key
                  ).Build();
 
-            await Sample2Async(kernel);
+            await Sample1Async(kernel);
+
+            //await Sample2Async(kernel);
         }
 
         static async Task Sample1Async(IKernel kernel)
