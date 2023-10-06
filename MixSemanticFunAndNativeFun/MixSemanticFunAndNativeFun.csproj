@@ -12,6 +12,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="Plugins\WriterPlugin\Email2\config.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Plugins\WriterPlugin\Email2\skprompt.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Plugins\WriterPlugin\Email\config.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

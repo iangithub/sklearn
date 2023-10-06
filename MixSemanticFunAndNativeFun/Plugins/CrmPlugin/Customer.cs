@@ -1,4 +1,5 @@
-﻿using Microsoft.SemanticKernel.SkillDefinition;
+﻿using Microsoft.SemanticKernel.Orchestration;
+using Microsoft.SemanticKernel.SkillDefinition;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,6 +17,14 @@ namespace MixSemanticFunAndNativeFun.Plugins.CrmPlugin
             //撰寫從CRM DataBase 取得客戶連絡人資料邏輯
             //do something
             return $"居匹踢";
+        }
+
+        [SKFunction, Description("根據客戶代碼及區域，取得客戶連絡人")]
+        public string GetCustomerContactV2(SKContext context)
+        {
+            //撰寫從CRM DataBase 取得客戶連絡人資料邏輯
+            //do something
+            return $"{context.Variables["CusCode"]}-{context.Variables["Area"]} 居匹踢";
         }
     }
 }
