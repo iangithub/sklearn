@@ -5,9 +5,9 @@ namespace MixSemanticFunAndNativeFun
 {
     internal class Program
     {
-        private const string deploy_model = "gpt4demo";
-        private const string aoai_Endpoint = "https://demo0222.openai.azure.com";
-        private const string api_Key = "89d1060fc53e438491c2078d2da84e0d";
+        private const string deploy_model = "xxx";
+        private const string aoai_Endpoint = "https://xxxx.openai.azure.com";
+        private const string api_Key = "xxxxx";
 
 
         static async Task Main(string[] args)
