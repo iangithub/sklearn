@@ -7,7 +7,7 @@ namespace KmSearch
 {
     internal class Program
     {
-        private const string deploy_Model = "xxxx";
+        private const string deploy_Model = "xxx";
         private const string embedding_Model = "xxxx";
         private const string aoai_Endpoint = "https://xxxx.openai.azure.com";
         private const string api_Key = "xxxx";
@@ -15,7 +15,6 @@ namespace KmSearch
 
         static async Task Main(string[] args)
         {
-
             var kernel = new KernelBuilder()
                 .WithAzureTextEmbeddingGenerationService(embedding_Model, aoai_Endpoint, api_Key)
                 .WithMemoryStorage(new VolatileMemoryStore())
