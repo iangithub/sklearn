@@ -29,6 +29,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PromptTemplateEngineSample"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiChatCompletionSample", "MultiChatCompletionSample\MultiChatCompletionSample.csproj", "{A7693345-4E26-4D92-BCF4-50D4D54DB7A2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KernelChatCompletion", "KernelChatCompletion\KernelChatCompletion.csproj", "{FB8E71D3-7709-40AE-BF74-FA2815B0F652}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{A7693345-4E26-4D92-BCF4-50D4D54DB7A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A7693345-4E26-4D92-BCF4-50D4D54DB7A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A7693345-4E26-4D92-BCF4-50D4D54DB7A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB8E71D3-7709-40AE-BF74-FA2815B0F652}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB8E71D3-7709-40AE-BF74-FA2815B0F652}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB8E71D3-7709-40AE-BF74-FA2815B0F652}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB8E71D3-7709-40AE-BF74-FA2815B0F652}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
