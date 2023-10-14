@@ -7,7 +7,7 @@ namespace KernelChatCompletion
 {
     internal class Program
     {
-        private const string deploy_model = "xxx";
+        private const string deploy_Model = "xxx";
         private const string aoai_Endpoint = "https://xxx.openai.azure.com";
         private const string api_Key = "xxxx";
 
