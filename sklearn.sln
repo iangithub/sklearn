@@ -23,9 +23,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChainSemanticFunc", "ChainS
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SequentialPlannerSample", "SequentialPlannerSample\SequentialPlannerSample.csproj", "{5D4E6A34-DFC2-476A-9EEF-990FE2B3EB89}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WriterPlannerSample", "WriterPlannerSample\WriterPlannerSample.csproj", "{CD555666-E76E-40CD-89A7-54C5354EC3DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WriterPlannerSample", "WriterPlannerSample\WriterPlannerSample.csproj", "{CD555666-E76E-40CD-89A7-54C5354EC3DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PromptTemplateEngineSample", "PromptTemplateEngineSample\PromptTemplateEngineSample.csproj", "{7C8DB197-DB5F-4457-9A6C-13AF14322684}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PromptTemplateEngineSample", "PromptTemplateEngineSample\PromptTemplateEngineSample.csproj", "{7C8DB197-DB5F-4457-9A6C-13AF14322684}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiChatCompletionSample", "MultiChatCompletionSample\MultiChatCompletionSample.csproj", "{A7693345-4E26-4D92-BCF4-50D4D54DB7A2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +83,10 @@ Global
 		{7C8DB197-DB5F-4457-9A6C-13AF14322684}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C8DB197-DB5F-4457-9A6C-13AF14322684}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C8DB197-DB5F-4457-9A6C-13AF14322684}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7693345-4E26-4D92-BCF4-50D4D54DB7A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7693345-4E26-4D92-BCF4-50D4D54DB7A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7693345-4E26-4D92-BCF4-50D4D54DB7A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7693345-4E26-4D92-BCF4-50D4D54DB7A2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
