@@ -13,6 +13,7 @@ namespace KmSearch
         private const string api_Key = "xxxx";
         private const string embedding_CollectionName = "Law";
 
+
         static async Task Main(string[] args)
         {
             var kernel = new KernelBuilder()

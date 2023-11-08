@@ -5,6 +5,12 @@ namespace SequentialPlannerSample
 {
     internal class Program
     {
+        //AOAI
+        private const string deploy_Model = "xxx";
+        private const string aoai_Endpoint = "https://xxx.openai.azure.com";
+        private const string api_Key = "xxx";
+        private const string bingSerach_Key = "xxx";
+
         //OpenAI
         private const string openai_Key = "xxx";
         private const string openai_deploy_Model = "gpt-4-1106-preview";
@@ -12,6 +18,15 @@ namespace SequentialPlannerSample
 
         static async Task Main(string[] args)
         {
+            //Azure OpenAI
+            //var kernel = new KernelBuilder()
+            //    .WithAzureChatCompletionService(
+            //     deploy_Model,   // Azure OpenAI Deployment Name
+            //     aoai_Endpoint, // Azure OpenAI Endpoint
+            //     api_Key  // Azure OpenAI Key
+            //    ).Build();
+
+            //OpenAI
             var kernel = new KernelBuilder()
                 .WithOpenAIChatCompletionService(
                  modelId: openai_deploy_Model,   // OpenAI Deployment Name

@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -9,19 +9,20 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.SemanticKernel" Version="1.0.0-beta5" />
+    <PackageReference Include="System.Linq.Async" Version="6.0.1" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Plugins\WriterPlugin\FacebookPoster\config.json">
+    <None Update="Plugins\QAPlugin\AssistantResults\config.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Plugins\WriterPlugin\FacebookPoster\skprompt.txt">
+    <None Update="Plugins\QAPlugin\AssistantResults\skprompt.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Plugins\WriterPlugin\Translate\config.json">
+    <None Update="Plugins\QAPlugin\Translate\config.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Plugins\WriterPlugin\Translate\skprompt.txt">
+    <None Update="Plugins\QAPlugin\Translate\skprompt.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

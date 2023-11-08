@@ -1,0 +1,9 @@
+{
+  "schema": 1,
+  "type": "completion",
+  "description": "If it is not Traditional Chinese, please translate it into Traditional Chinese.",
+  "completion": {
+    "max_tokens": 2000,
+    "temperature": 0.2
+  }
+}

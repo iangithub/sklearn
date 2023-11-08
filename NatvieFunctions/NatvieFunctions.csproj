@@ -12,16 +12,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Plugins\WriterPlugin\FacebookPoster\config.json">
+    <None Update="Plugins\QAPlugin\AssistantResults\config.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Plugins\WriterPlugin\FacebookPoster\skprompt.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Plugins\WriterPlugin\Translate\config.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Plugins\WriterPlugin\Translate\skprompt.txt">
+    <None Update="Plugins\QAPlugin\AssistantResults\skprompt.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

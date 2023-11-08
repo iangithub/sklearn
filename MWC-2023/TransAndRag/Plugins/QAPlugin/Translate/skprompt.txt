@@ -1,0 +1,4 @@
+﻿請你先分析以下文字的語言，如果是繁體中文就維持原內容，如果是其它語言，please translator to zh-tw
+###
+{{$query_input}}
+### 
