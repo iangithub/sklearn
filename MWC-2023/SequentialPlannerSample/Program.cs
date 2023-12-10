@@ -6,10 +6,10 @@ namespace SequentialPlannerSample
     internal class Program
     {
         //AOAI
+        //AOAI
         private const string deploy_Model = "xxx";
         private const string aoai_Endpoint = "https://xxx.openai.azure.com";
         private const string api_Key = "xxx";
-        private const string bingSerach_Key = "xxx";
 
         //OpenAI
         private const string openai_Key = "xxx";

@@ -9,11 +9,11 @@ namespace MixSemanticFunAndNativeFun
         private const string deploy_Model = "xxx";
         private const string aoai_Endpoint = "https://xxx.openai.azure.com";
         private const string api_Key = "xxx";
-        private const string bingSerach_Key = "xxx";
 
         //OpenAI
         private const string openai_Key = "xxx";
         private const string openai_deploy_Model = "gpt-4-1106-preview";
+
 
         static async Task Main(string[] args)
         {

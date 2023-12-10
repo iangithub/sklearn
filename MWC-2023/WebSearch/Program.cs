@@ -43,7 +43,7 @@ namespace WebSearch
             // Connector
             var searchPluginName = "bing";
             var bingConnector = new BingConnector(bingSerach_Key);
-            kernel.ImportFunctions(new WebSearchEnginePlugin(bingConnector),searchPluginName);
+            kernel.ImportFunctions(new WebSearchEnginePlugin(bingConnector), searchPluginName);
 
             // Import the semantic function from the plugins directory.
             var qaPlugin = "QAPlugin";

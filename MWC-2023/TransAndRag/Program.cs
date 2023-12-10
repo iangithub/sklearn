@@ -15,10 +15,11 @@ namespace TransAndRag
         private const string aoai_Endpoint = "https://xxx.openai.azure.com";
         private const string api_Key = "xxx";
         private const string embedding_CollectionName = "Law";
-       
+
         //OpenAI
         private const string openai_Key = "xxx";
         private const string openai_deploy_Model = "gpt-4-1106-preview";
+
 
         static async Task Main(string[] args)
         {
@@ -67,7 +68,7 @@ namespace TransAndRag
                     3.公文書法で規制される内容とは何ですか？ (檔案法所規範的內容是指哪些)
                     4.Can permanently preserved agency files be turned into public information?
                  */
-               
+
 
                 var query = Console.ReadLine();
                 Console.Write("\n");
@@ -85,7 +86,7 @@ namespace TransAndRag
                 //自動翻譯
                 var transQuery = await kernel.RunAsync(transFun, new ContextVariables() { { "query_input", query } });
 
-               
+
                 //RAG Search
                 var searchResult = memoryWithCustomDb
                     .SearchAsync(embedding_CollectionName, transQuery.GetValue<string>(), minRelevanceScore: 0.8);
