@@ -8,10 +8,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 <ItemGroup>
-    <PackageReference Include="Microsoft.SemanticKernel" Version="1.0.0-rc3" />
-    <PackageReference Include="Microsoft.SemanticKernel.Planners.OpenAI" Version="1.0.0-rc3" />
-    <PackageReference Include="Microsoft.SemanticKernel.PromptTemplate.Handlebars" Version="1.0.0-rc3" />
-    <PackageReference Include="Microsoft.SemanticKernel.Yaml" Version="1.0.0-rc3" />
+    <PackageReference Include="Microsoft.SemanticKernel" Version="1.1.0" />
+    <PackageReference Include="Microsoft.SemanticKernel.PromptTemplates.Handlebars" Version="1.1.0" />
+    <PackageReference Include="Microsoft.SemanticKernel.Yaml" Version="1.1.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 </Project>

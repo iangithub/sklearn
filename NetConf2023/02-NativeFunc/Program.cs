@@ -1,9 +1,10 @@
 ﻿using Microsoft.SemanticKernel;
-using Microsoft.SemanticKernel.AI.ChatCompletion;
-using Microsoft.SemanticKernel.Connectors.AI.OpenAI;
-using Microsoft.SemanticKernel.PromptTemplate.Handlebars;
-using Microsoft.SemanticKernel.Plugins;
+using Microsoft.VisualBasic;
 using System.Reflection;
+using Newtonsoft.Json;
+using Microsoft.SemanticKernel.PromptTemplates.Handlebars;
+using Microsoft.SemanticKernel.ChatCompletion;
+using Microsoft.SemanticKernel.Connectors.OpenAI;
 using MyPlugins;
 
 string Gpt4DeploymentName = "xxx";
@@ -12,7 +13,7 @@ string AzureOpenAIEndpoint = "https://xxx.openai.azure.com/";
 string AzureOpenAIApiKey = "xxx";
 string currentDirectory = Directory.GetCurrentDirectory();
 
-Kernel kernel = new KernelBuilder()
+Kernel kernel = Kernel.CreateBuilder()
             .AddAzureOpenAIChatCompletion(
                 deploymentName: Gpt4DeploymentName,
                 modelId: Gpt4ModelId,
@@ -30,27 +31,47 @@ KernelFunction prompt = kernel.CreateFunctionFromPromptYaml(
 //Load Plugins
 kernel.Plugins.AddFromType<DataTimePlugin>();
 
+
+#pragma warning disable SKEXP0004 
+
+kernel.PromptRendered += (sender, args) =>
+{
+    Console.WriteLine("=========== PromptRendered Start ===========");
+    Console.WriteLine(args.RenderedPrompt);
+    Console.WriteLine("=========== PromptRendered End ===========\n\n");
+};
+
+
+kernel.FunctionInvoking += (sender, args) =>
+{
+    Console.WriteLine("=========== FunctionInvoking Start ===========");
+    Console.WriteLine(args.Function.Name);
+    Console.WriteLine("=========== FunctionInvoking End ===========\n\n");
+
+};
+
+#pragma warning restore SKEXP0004 
+
+
 // Create the chat history
 ChatHistory chatMessages = [];
 
 while (true)
 {
-
-
     // Get user input
     System.Console.Write("User > ");
     var userMessage = Console.ReadLine()!;
     chatMessages.AddUserMessage(userMessage);
 
     // Enable auto invocation of kernel functions
-    OpenAIPromptExecutionSettings settings = new()
+    OpenAIPromptExecutionSettings openAIPromptExecutionSettings = new()
     {
-        FunctionCallBehavior = FunctionCallBehavior.AutoInvokeKernelFunctions
+        ToolCallBehavior = ToolCallBehavior.AutoInvokeKernelFunctions
     };
 
     var result = kernel.InvokeStreamingAsync<StreamingChatMessageContent>(
         prompt,
-        arguments: new(settings) {
+        arguments: new(openAIPromptExecutionSettings) {
             { "messages", chatMessages }
         });
 
@@ -76,8 +97,8 @@ while (true)
             chatMessageContent.Content += content;
         }
     }
-    System.Console.WriteLine("\n\n");
+    System.Console.WriteLine("\n");
 
-    chatMessages.AddMessage(chatMessageContent!);
+    chatMessages.Add(chatMessageContent!);
 
 }

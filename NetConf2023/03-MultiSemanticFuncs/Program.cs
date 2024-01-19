@@ -1,9 +1,10 @@
 ﻿using Microsoft.SemanticKernel;
-using Microsoft.SemanticKernel.AI.ChatCompletion;
-using Microsoft.SemanticKernel.Connectors.AI.OpenAI;
-using Microsoft.SemanticKernel.PromptTemplate.Handlebars;
-using Microsoft.SemanticKernel.Plugins;
+using Microsoft.VisualBasic;
 using System.Reflection;
+using Newtonsoft.Json;
+using Microsoft.SemanticKernel.PromptTemplates.Handlebars;
+using Microsoft.SemanticKernel.ChatCompletion;
+using Microsoft.SemanticKernel.Connectors.OpenAI;
 
 string Gpt4DeploymentName = "xxx";
 string Gpt4ModelId = "xxx";
@@ -11,13 +12,13 @@ string AzureOpenAIEndpoint = "https://xxx.openai.azure.com/";
 string AzureOpenAIApiKey = "xxx";
 string currentDirectory = Directory.GetCurrentDirectory();
 
-Kernel kernel = new KernelBuilder()
-            .AddAzureOpenAIChatCompletion(
-                deploymentName: Gpt4DeploymentName,
-                modelId: Gpt4ModelId,
-                endpoint: AzureOpenAIEndpoint,
-                apiKey: AzureOpenAIApiKey)
-            .Build();
+Kernel kernel = Kernel.CreateBuilder()
+                .AddAzureOpenAIChatCompletion(
+                    deploymentName: Gpt4DeploymentName,
+                    endpoint: AzureOpenAIEndpoint,
+                    apiKey: AzureOpenAIApiKey,
+                    modelId: Gpt4ModelId)
+                .Build();
 
 // Load prompt from Directory
 using StreamReader reader = new(Path.Combine(currentDirectory, "Plugins", "WriterPlugin", "Writer.yaml"));

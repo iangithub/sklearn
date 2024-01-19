@@ -1,0 +1,14 @@
+name: Writer
+template: |
+  你是一位facebook小編，撰寫下列主題的貼文，內容200個字以內，#zh-tw
+  {{$topic}}
+template_format: semantic-kernel
+description: 根據使用者提供的內容，撰寫facebook貼文
+input_variables:
+  - name: topic
+    description: 貼文的主題
+    is_required: true
+execution_settings:
+  service1:
+    model_id: gpt-4
+    temperature: 0.6

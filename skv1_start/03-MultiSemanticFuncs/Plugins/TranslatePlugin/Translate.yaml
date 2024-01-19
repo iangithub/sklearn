@@ -1,0 +1,14 @@
+name: Translate
+template: |
+  翻譯下列內容成為英文，並輸出原始中文資料及翻譯後的英文資料都要顯示出來，中英文內容分隔2行
+  {{$postcontent}}
+template_format: semantic-kernel
+description: 根據使用者提供的內容，翻譯成英文
+input_variables:
+  - name: postcontent
+    description: 使用者提供的內容
+    is_required: true
+execution_settings:
+  service1:
+    model_id: gpt-4
+    temperature: 0.6

@@ -107,13 +107,17 @@ namespace TransAndRag
 
                 // kernel.PromptRendering += (sender, e) =>
                 // {
-                //     Console.WriteLine($"{e.Function.Name} : Prompt Rendering Handler - Triggered");
+                //     Console.WriteLine("========== Prompt Rendering Start ================");
+                //     Console.WriteLine($"Function.Name => {e.Function.Name} ");
+                //     Console.WriteLine("========== Prompt Rendering End ================");
+
                 // };
 
                 // kernel.PromptRendered += (sender, e) =>
                 // {
-                //     Console.WriteLine($"{e.Function.Name} : Prompt Rendered Handler - Triggered");
-                //     Console.WriteLine(e.RenderedPrompt);
+                //     Console.WriteLine("========== Prompt Rendering Start ================");
+                //     Console.WriteLine($"RenderedPrompt => {e.RenderedPrompt} ");
+                //     Console.WriteLine("========== Prompt Rendering End ================");
                 // };
 
                 #endregion

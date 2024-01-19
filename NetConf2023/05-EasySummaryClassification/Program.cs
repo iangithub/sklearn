@@ -6,14 +6,13 @@ string AzureOpenAIEndpoint = "https://xxx.openai.azure.com/";
 string AzureOpenAIApiKey = "xxx";
 string currentDirectory = Directory.GetCurrentDirectory();
 
-
-Kernel kernel = new KernelBuilder()
-            .AddAzureOpenAIChatCompletion(
-                deploymentName: Gpt4DeploymentName,
-                modelId: Gpt4ModelId,
-                endpoint: AzureOpenAIEndpoint,
-                apiKey: AzureOpenAIApiKey)
-            .Build();
+Kernel kernel = Kernel.CreateBuilder()
+                .AddAzureOpenAIChatCompletion(
+                    deploymentName: Gpt4DeploymentName,
+                    endpoint: AzureOpenAIEndpoint,
+                    apiKey: AzureOpenAIApiKey,
+                    modelId: Gpt4ModelId)
+                .Build();
 
 // Import the Plugin from the plugins directory.
 var pluginsDirectory = Path.Combine(Directory.GetCurrentDirectory(), "Plugins");
